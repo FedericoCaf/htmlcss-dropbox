@@ -1,0 +1,69 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+*{
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+.clearfix::after{
+  content:'';
+  display: table;
+  clear:both;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width:100%;
+  background-color: lightgrey;
+}
+
+.menu-left, .menu-right, header ul li{
+  display: inline-block;
+  font-size: 17px;
+  list-style: none;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+/* ul{
+  height:40px;
+} */
+
+header ul li{
+  padding-right: 15px;
+}
+
+ul li a img{
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.menu-right{
+  float:right;
+}
+
+
+.jumbotron{
+  height: 500px;
+  width: 100%;
+  background-color:#B4D0E7;
+  color: black;
+}
+
+.jumbotron h1{
+  font-size:50px;
+  padding: 120px;
+  font-weight:900;
+}
+
