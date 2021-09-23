@@ -18,30 +18,28 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  height: 80px;
+  height: 50px;
   width:100%;
-  background-color: lightgrey;
+  background-color: white;
 }
 
 .menu-left, .menu-right, header ul li{
   display: inline-block;
-  font-size: 17px;
+  font-size: 12px;
   list-style: none;
-  line-height: 40px;
+  line-height: 50px;
   vertical-align: middle;
 }
 
-/* ul{
-  height:40px;
-} */
+.logo{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px;
+}
 
 header ul li{
   padding-right: 15px;
-}
-
-ul li a img{
-  margin-top: 8px;
-  margin-left: 5px;
+  color: white;
 }
 
 ul li a{
@@ -53,17 +51,50 @@ ul li a{
   float:right;
 }
 
+.menu-right ul li a span{
+  padding:5px 10px;
+  background-color: #0061FF;
+  font-size: 10px;
+  color: white;
+}
 
 .jumbotron{
-  height: 500px;
-  width: 100%;
+  height: 600px;
+  width: 100vw;
   background-color:#B4D0E7;
   color: black;
 }
 
-.jumbotron h1{
-  font-size:50px;
-  padding: 120px;
-  font-weight:900;
+.container-jumbo{
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+h1{
+  font-size:45px;
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+
+.container-text{
+  width: 40%;
+}
+
+.container-text p{
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.container-text span{
+  margin-top: 20px;
+  padding: 10px;
+  background-color:#0061FF;
+  color: white;
+  font-size: 10px;
+}
+
+.container-jumbo a i{
+  color: black;
 }
 
