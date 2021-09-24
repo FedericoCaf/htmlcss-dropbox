@@ -121,7 +121,6 @@ h1{
 
 .container-prices{
   width:50%;
-  height: 600px;
   margin: 0 auto;
   margin-top: 230px;
 }
@@ -135,6 +134,7 @@ h1{
   width: 100%;
   height: 600px;
   padding-top: 20px;
+  margin-bottom:50px;
 }
 
 .column-center{
@@ -213,3 +213,58 @@ h1{
 .top-list li h5{
   font-size: 16px;
 }
+
+.container-foto-guys{
+  width: 50%;
+  margin: 0 auto;
+  margin-top:80px;
+  height: 800px;
+  background-color: teal;
+}
+
+.enterprise-content{
+  height: 200px;
+  border:1px solid lightgray;
+}
+
+.title-enterprise-content{
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.enterprise-content i{
+  padding:10px;
+}
+
+.enterprise-text{
+  width:70%;
+  height: 200px;
+  float:left;
+}
+
+.button-ufficio-vendite{
+  width: 30%;
+  height: 200px;
+  float:left;
+}
+
+.enterprise-text, .button-ufficio-vendite{
+ padding: 20px;
+}
+
+.enterprise-text h4{
+  margin: 20px 0 45px 0;
+}
+
+.enterprise-text p{
+  font-size: 11.5px;
+}
+
+.button-ufficio-vendite span{
+  text-align: center;
+  padding: 8px 40px 8px 40px;
+  background-color: #0061FF;
+  color: white;
+  font-size: 12px;
+}
+
