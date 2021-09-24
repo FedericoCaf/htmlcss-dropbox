@@ -45,7 +45,7 @@ header ul li{
   color: white;
 }
 
-a{
+ul li a{
   text-decoration: none;
 }
 
@@ -114,7 +114,97 @@ h1{
   color: white;
 }
 
-
 .img-container-home img{
   width: 100%;
+}
+
+
+.container-prices{
+  width:50%;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.container-title-prices h2{
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+.container-column-prices{
+  width: 100%;
+  height: 600px;
+  padding-top: 20px;
+}
+
+.column-center{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.column-prices{
+  width: calc(100% / 3 - 20px);
+  border: 1px solid lightgray;
+  float:left;
+  font-size: 12px;
+}
+
+.title-column{
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
+
+ .column-prices ul {
+  list-style: none;
+  padding: 15px;
+} 
+
+.container-column-prices ul li{ 
+  padding-bottom: 13px;
+}
+
+.column-prices .prova-gratis{
+  padding:12px;
+  background-color:#0061FF;
+  margin: 10px 15px 20px 15px;
+  color: white;
+  text-align: center;
+}
+
+.text-with-border span{
+  margin: 20px 0 20px 15px;
+  padding-top: 20px;
+  padding-bottom:20px;
+  border-bottom: 1px solid lightgrey; 
+}
+
+.text-with-border a{
+  color:#0061FF;
+}
+
+.text-with-border{
+ margin-bottom:30px;
+}
+
+.bottom-list ul{
+  list-style: none;
+}
+
+.bottom-list li::before {
+  content:'\2713    ';
+  color:#0061FF;
+  font-weight: bold;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.bottom-list .bold::before{
+  content:'';
+}
+
+.top-list li h5{
+  font-size: 16px;
 }
