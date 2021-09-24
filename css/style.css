@@ -47,10 +47,7 @@ header ul li{
 
 ul li a{
   text-decoration: none;
-}
-
-ul li a{
- color: black;
+  color: black;
 }
 
 .menu-right{
@@ -66,18 +63,18 @@ ul li a{
 
 .jumbotron{
   background-color:#B4D0E7;
-  height: 700px;
+  height: 750px;
 }
 
 .container-home{
   width: 70%;
-  height: 600px;
+  /* height: 600px; */
   margin: 0 auto;
 }
 
 .text-container-home{
   width: 40%;
-  height: 400px;
+  /* height: 400px; */
   float: left;
 }
 
@@ -88,22 +85,22 @@ ul li a{
 }
 
 h1{
-  font-size: 80px;
-  padding: 5% 10% 5% 0;
+  font-size: 70px;
+  padding: 10% 10% 5% 0;
 }
 
 .text-container-home h6{
   font-size: 20px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .text-container-home p{
-  font-size: 20px;
+  font-size: 15px;
   padding-top: 40px;
 }
 
 .text-container-home .fas.fa-arrow-down{
-  padding-top: 50px;
+  padding-top: 30px;
   font-size: 30px;
   color: black;
 }
@@ -114,16 +111,19 @@ h1{
   color: white;
 }
 
+.text-container-home a{
+  text-decoration: none;
+}
+
 .img-container-home img{
   width: 100%;
 }
-
 
 .container-prices{
   width:50%;
   height: 600px;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 230px;
 }
 
 .container-title-prices h2{
@@ -191,10 +191,15 @@ h1{
   list-style: none;
 }
 
+
 .bottom-list li::before {
   content:'\2713    ';
   color:#0061FF;
   font-weight: bold;
+}
+
+.margin-bottom{
+  margin-bottom: 30px;
 }
 
 .bold{
