@@ -24,10 +24,13 @@ header{
   z-index: 999;
 }
 
+.list-none{
+  list-style: none;
+}
+
 .menu-left, .menu-right, header ul li{
   display: inline-block;
   font-size: 17px;
-  list-style: none;
   line-height: 50px;
   vertical-align: middle;
 }
@@ -115,8 +118,11 @@ h1{
   width: 100%;
 }
 
-.container-prices{
+.width-fifty{
   width:50%;
+}
+
+.container-prices{
   margin: 0 auto;
   margin-top: 130px;
 }
@@ -150,8 +156,7 @@ h1{
   padding: 10px;
 }
 
- .column-prices ul {
-  list-style: none;
+ .column-prices {
   padding: 15px;
 } 
 
@@ -182,10 +187,6 @@ h1{
  margin-bottom:30px;
 }
 
-.bottom-list ul{
-  list-style: none;
-}
-
 .bottom-list li::before {
   content:'\2713    ';
   color:#0061FF;
@@ -209,7 +210,6 @@ h1{
 }
 
 .container-foto-guys{
-  width: 50%;
   margin: 0 auto;
   margin-top:80px;
 }
@@ -281,7 +281,6 @@ h1{
 }
 
 .button{
-  width:50%;
   padding: 12px 2px 12px 2px;
   border: 1px solid black;
   text-align: center;
@@ -292,7 +291,6 @@ h1{
 }
 
 .operations{
-  width:50%;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -322,7 +320,6 @@ h1{
 .five-hundred-thousand{
   margin: 0 auto;
   margin-top: 100px;
-  width: 50%;
 }
 
 .five-hundred-thousand h2{
@@ -355,8 +352,7 @@ h1{
   width: 50%;
   float:left;
   line-height: 250px;
-  text-align: center;
- 
+  text-align: center; 
 }
 
 .single-square img{
@@ -421,13 +417,11 @@ h1{
 }
 
 .pre-faq-container-center{
-  width: 50%;
   margin: 0 auto;
   height: 260px;
 }
 
 .pre-faq-text, .pre-faq-button{
-  width: 50%;
   height: 260px;
   line-height: 260px;
   float: left;
@@ -441,7 +435,7 @@ h1{
   color: #61082C;
 }
 
-.white{
+.btn-white{
   background-color: white;
   font-size: 12px;
   padding: 10px 30px;
@@ -450,8 +444,45 @@ h1{
   border: none;
 }
 
+.container-faq{
+  height: 600px;
+  margin: 0 auto;
+}
 
+.list-title-faq{
+  font-size: 25px;
+}
 
+.container-faq ul li{
+  line-height: 100px;
+  border-top: 1px solid lightgray;
+}
 
+.container-faq ul li i{
+  margin-left:260px;
+  font-size: 20px;
+}
 
+.container-faq ul p{
+  font-size:14px;
+  font-weight: normal;
+  color:#808E99;
+}
+
+footer{
+  margin-top: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+footer table{
+  width: 80%;
+  margin: 0 auto;
+  color:white;
+  padding: 100px;
+}
+
+footer table tr td{
+  padding-bottom: 15px;
+}
 
