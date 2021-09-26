@@ -30,9 +30,16 @@ header{
 
 .menu-left, .menu-right, header ul li{
   display: inline-block;
-  font-size: 17px;
-  line-height: 50px;
+  font-size: 2vh;
+  line-height: 46px;
   vertical-align: middle;
+  border: 2px solid transparent;
+}
+
+@media only screen and (max-width: 1380px) {
+  .menu-right {
+    display: none;
+  }
 }
 
 .logo{
@@ -43,7 +50,7 @@ header{
 }
 
 header ul li{
-  padding-right: 50px;
+  margin-right: 50px;
   color: white;
 }
 
@@ -63,9 +70,17 @@ ul li a{
   overflow: hidden;
 }
 
+.menu-left ul li:hover{
+  border-bottom: 2px solid black;
+}
+
+.menu-right ul li:not(.button-blue):hover{
+  border-bottom: 2px solid black;
+}
+
 .jumbotron{
   background-color:#B4D0E7;
-  height: 700px;
+  height: 85vh;
 }
 
 .container-home{
@@ -88,23 +103,25 @@ ul li a{
 }
 
 h1{
-  font-size: 65px;
+  font-size: 4vw;
   padding: 10% 10% 5% 0;
 }
 
 .text-container-home h6{
-  font-size: 17px;
+  font-size: 2vh;
   padding-bottom: 50px;
+  font-weight: 600;
 }
 
 .text-container-home p{
-  font-size: 15px;
+  font-size: 1.8vh;
   padding-top: 40px;
+  font-weight: 600;
 }
 
 .text-container-home .fas.fa-arrow-down{
   padding-top: 30px;
-  font-size: 30px;
+  font-size: 3vh;
   color: black;
 }
 
@@ -124,11 +141,11 @@ h1{
 
 .container-prices{
   margin: 0 auto;
-  margin-top: 130px;
+  margin-top: 144px;
 }
 
 .container-title-prices h2{
-  font-size: 35px;
+  font-size: 3.5vh;
   padding-bottom: 20px;
 }
 
@@ -273,7 +290,7 @@ h1{
 
 .trova-partner-text{
   padding: 50px 0px 50px 40px;
-  font-size: 15px;
+  font-size: 1.8vh;
 }
 
 .trova-partner-text p{
@@ -281,7 +298,7 @@ h1{
 }
 
 .button{
-  padding: 12px 2px 12px 2px;
+  padding: 4px 8px 4px 8px;
   border: 1px solid black;
   text-align: center;
 }
@@ -412,18 +429,15 @@ h1{
 }
 
 .pre-faq-container{
-  height: 260px;
   background-color:#B4D0E7;
 }
 
 .pre-faq-container-center{
   margin: 0 auto;
-  height: 260px;
+  padding: 100px 0;
 }
 
 .pre-faq-text, .pre-faq-button{
-  height: 260px;
-  line-height: 260px;
   float: left;
 }
 
@@ -431,7 +445,7 @@ h1{
   display: inline-block;
   vertical-align: middle;
   line-height: 30px;
-  font-size: 35px;
+  font-size: 3.5vh;
   color: #61082C;
 }
 
@@ -439,28 +453,23 @@ h1{
   background-color: white;
   font-size: 12px;
   padding: 10px 30px;
-  margin-left: 230px;
   color: black;
   border: none;
+  float:right;
 }
 
 .container-faq{
-  height: 600px;
   margin: 0 auto;
 }
 
-.list-title-faq{
-  font-size: 25px;
-}
-
 .container-faq ul li{
-  line-height: 100px;
   border-top: 1px solid lightgray;
+  padding: 30px 0;
+  font-size: 1.8vh;
 }
 
-.container-faq ul li i{
-  margin-left:260px;
-  font-size: 20px;
+#list-title-faq{
+  font-size: 3vh;
 }
 
 .container-faq ul p{
@@ -484,5 +493,19 @@ footer table{
 
 footer table tr td{
   padding-bottom: 15px;
+}
+
+table tr td a{
+  color: white;
+  font-size: 13px;
+}
+
+.container-faq ul li{
+  position: relative;
+}
+
+.container-faq ul li a{
+  position: absolute;
+  right:0;
 }
 
