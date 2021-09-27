@@ -28,6 +28,7 @@ header{
   z-index: 999;
 }
 
+/* creo una classe per tutti i link */
 .list-none{
   list-style: none;
 }
@@ -40,6 +41,7 @@ header{
   border-bottom: 2px solid transparent;
 }
 
+/* sparisce il menu di destra diminuendo dimensione schermo */
 @media only screen and (max-width: 1380px) {
   .menu-right {
     display: none;
@@ -86,14 +88,10 @@ header ul li a{
   border-bottom: 2px solid black;
 }
 
-
-
-
-/* PROVA TENDINA */
-
-/* .menu-right ul li {display: inline-block;} */
-/* .menu-right ul li:hover {background:white;} */
-.menu-right ul li:hover ul {display: block;}
+/* TENDINA MENU */
+.menu-right ul li:hover ul {
+  display: block;
+}
 .menu-right ul li ul {
   position: absolute;
   width: 10%;
@@ -103,14 +101,18 @@ header ul li a{
   background:white; 
   display: block; 
 }
-.menu-right ul li ul li a {display:block !important;} 
-.menu-right ul li ul li:hover {background:snow;}
-/* FINE PROVA TENDINA */
+.menu-right ul li ul li a {
+  display:block !important;
+} 
+
+.menu-right ul li ul li:hover {
+  background:snow;
+}
+/* FINE TENDINA */
 
 
 .jumbotron{
   background-color:#B4D0E7;
-  /* height: 85vh; */
 }
 
 .container-home{
@@ -128,6 +130,7 @@ header ul li a{
   float: left;
 }
 
+/* posizione l'immagine in modo che vada poco fuori */
 .img-container-home{
   width: 60%;
   position: absolute;
@@ -162,6 +165,7 @@ h1{
   width: 100%;
 }
 
+/* creo una classe per ogni volta che devo dare width 50%  */
 .width-fifty{
   width:50%;
 }
@@ -180,6 +184,7 @@ form .fattur-annuale{
   margin-left: 12px;
 }
 
+/* sezione tabelle dei prezzi */
 .container-column-prices{
   width: 100%;
   padding-top: 20px;
@@ -234,6 +239,7 @@ form .fattur-annuale{
   font-weight: bold;
 }
 
+/* inserisco un elemento invisibile per allineare in basso le tabelle dei prezzi */
 .transparent{
   opacity: 0;
 }
@@ -272,13 +278,9 @@ label{
   color:lightgray;
 }
 
+/* elimino la spunta blu sul titolo della lista dei punti salienti */
 .bottom-list .bold::before{
   content:'';
-}
-
-.container-foto-guys{
-  margin: 0 auto;
-  margin-top:80px;
 }
 
 .enterprise-content{
@@ -297,6 +299,11 @@ label{
 .enterprise-text{
   width:70%;
   float:left;
+}
+
+.container-foto-guys{
+  margin: 0 auto;
+  margin-top:80px;
 }
 
 .button-ufficio-vendite{
@@ -340,6 +347,7 @@ label{
   color:black;
 }
 
+/* sezione esegui più operazioni con dropbox  */
 .operations{
   margin: 0 auto;
   margin-top: 50px;
@@ -347,7 +355,7 @@ label{
 
 .column-operations{
   width: calc(100% / 3);
-  padding: 0 10px 0 10px;
+  padding: 20px 10px 0 10px;
   float:left;
 }
 
@@ -384,7 +392,6 @@ label{
 .container-squares-global{
   margin-top: 40px;
   width: 100%;
-  /* height: 500px; */
 }
 
 .container-squares{
@@ -409,7 +416,7 @@ label{
   padding: 15% 5% 5% 5%;
 } */
 
-/* soluzione responsive ma non benissimo */
+/* soluzione responsive */
 .single-square{
   position: relative;
   width: 13vw;
@@ -422,6 +429,7 @@ label{
   border:14px solid rgba(255, 255, 255, 0.4);
 }
 
+/* flotto la parte destra a destra perchè con le dimensioni in vw rimaneva un margine a destra */
 .right-square{
   float:right;
 }
@@ -463,19 +471,9 @@ label{
   background-color:#FED830; 
 }
 
-.container-squares h2{
-  font-size: 50px;
-  font-family: 'Space Grotesk', sans-serif;
-}
-
-.container-squares p{
-  font-size: 13px;
+.container-squares img{
   margin-bottom: 30px;
-}
-
-.container-squares h2 sup{
-  font-size: 18px;
-  margin-left:-10px;
+  width: 50%;
 }
 
 .border-line{
@@ -560,6 +558,7 @@ footer{
   background-color: black;
 }
 
+/* per il footer creo una tabella*/
 footer table{
   width: 80%;
   margin: 0 auto;
@@ -585,3 +584,49 @@ table tr td a{
   right:0;
 }
 
+.footer-container{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.footer-container ul{
+  float: left;
+  width: 20%;
+  padding: 70px 0;
+  list-style: none;
+  color: white;
+}
+
+.footer-container a{
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+}
+
+.footer-container li{
+  margin-bottom: 18px;
+}
+
+.footer-title{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.language{
+  width: 70%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.language p{
+  display: inline;
+  padding-top: 50px;
+  border-top: 1px solid white;
+  color: white;
+}
+
+.language a{
+  color:white;
+}
