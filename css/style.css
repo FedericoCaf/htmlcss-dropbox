@@ -2,6 +2,10 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
 box-sizing: border-box;
 margin:0;
@@ -31,9 +35,9 @@ header{
 .menu-left, .menu-right, header ul li{
   display: inline-block;
   font-size: 2vh;
-  line-height: 46px;
+  line-height: 48px;
   vertical-align: middle;
-  border: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 @media only screen and (max-width: 1380px) {
@@ -54,7 +58,7 @@ header ul li{
   color: white;
 }
 
-ul li a{
+header ul li a{
   color: black;
 }
 
@@ -62,28 +66,55 @@ ul li a{
   float:right;
 }
 
-.menu-right ul li a span{
-  padding:5px 20px;
+.button-blue{
+  padding:10px 30px;
   background-color: #0061FF;
-  font-size: 13px;
+  font-size: 1.5vh;
   color: white;
-  overflow: hidden;
+  text-align: center;
+}
+
+.button-blue:hover{
+  background-color:dodgerblue;
 }
 
 .menu-left ul li:hover{
   border-bottom: 2px solid black;
 }
 
-.menu-right ul li:not(.button-blue):hover{
+.menu-right ul li:not(.non-border):hover{
   border-bottom: 2px solid black;
 }
 
+
+
+
+/* PROVA TENDINA */
+
+/* .menu-right ul li {display: inline-block;} */
+/* .menu-right ul li:hover {background:white;} */
+.menu-right ul li:hover ul {display: block;}
+.menu-right ul li ul {
+  position: absolute;
+  width: 10%;
+  display: none;
+}
+.menu-right ul li ul li { 
+  background:white; 
+  display: block; 
+}
+.menu-right ul li ul li a {display:block !important;} 
+.menu-right ul li ul li:hover {background:snow;}
+/* FINE PROVA TENDINA */
+
+
 .jumbotron{
   background-color:#B4D0E7;
-  height: 85vh;
+  /* height: 85vh; */
 }
 
 .container-home{
+  position: relative;
   width: 70%;
   margin: 0 auto;
 }
@@ -99,7 +130,9 @@ ul li a{
 
 .img-container-home{
   width: 60%;
-  float:left;
+  position: absolute;
+  right:0;
+  bottom:-10%;
 }
 
 h1{
@@ -120,15 +153,9 @@ h1{
 }
 
 .text-container-home .fas.fa-arrow-down{
-  padding-top: 30px;
+  padding: 40px 0;
   font-size: 3vh;
   color: black;
-}
-
-.text-container-home a span{
-  padding: 15px;
-  background-color: #0061FF;
-  color: white;
 }
 
 .img-container-home img{
@@ -147,6 +174,10 @@ h1{
 .container-title-prices h2{
   font-size: 3.5vh;
   padding-bottom: 20px;
+}
+
+form .fattur-annuale{
+  margin-left: 12px;
 }
 
 .container-column-prices{
@@ -173,20 +204,13 @@ h1{
   padding: 10px;
 }
 
- .column-prices {
-  padding: 15px;
-} 
-
 .container-column-prices ul li{ 
   padding-bottom: 13px;
 }
 
-.column-prices .prova-gratis{
-  padding:12px;
-  background-color:#0061FF;
-  margin: 10px 15px 20px 15px;
-  color: white;
-  text-align: center;
+.wid-eighty{
+  width: 80%;
+  margin: 20px auto;
 }
 
 .text-with-border span{
@@ -210,20 +234,46 @@ h1{
   font-weight: bold;
 }
 
-.margin-bottom{
-  margin-bottom: 30px;
+.transparent{
+  opacity: 0;
 }
 
 .bold{
   font-weight: bold;
 }
 
-.bottom-list .bold::before{
-  content:'';
+label{
+  font-size: 14px;
 }
 
-.top-list li h5{
-  font-size: 16px;
+.icon-container{
+  width:7%;
+  float:left;
+}
+
+.text-container-top-list{
+  width:93%;
+  float:left;
+}
+
+.top-list, .bottom-list{
+  padding: 15px;
+}
+
+.top-list div{
+  padding: 10px 0;
+}
+
+.title-top-list{
+  font-size: 20px;
+}
+
+.text-color-gray{
+  color:lightgray;
+}
+
+.bottom-list .bold::before{
+  content:'';
 }
 
 .container-foto-guys{
@@ -266,22 +316,9 @@ h1{
   font-size: 11.5px;
 }
 
-.button-ufficio-vendite span{
-  text-align: center;
-  padding: 12px 20px 12px 20px;
-  background-color: #0061FF;
-  color: white;
-  font-size: 12px;
-}
-
 .foto-guys{
   width: 55%;
   float: left;
-}
-
-.trova-partner-text{
-  width: 45%;
-  float:left;
 }
 
 .foto-guys img{
@@ -291,16 +328,12 @@ h1{
 .trova-partner-text{
   padding: 50px 0px 50px 40px;
   font-size: 1.8vh;
+  width: 45%;
+  float:left;
 }
 
 .trova-partner-text p{
   margin: 25px 0;
-}
-
-.button{
-  padding: 4px 8px 4px 8px;
-  border: 1px solid black;
-  text-align: center;
 }
 
 .trova-partner-text a{
@@ -323,7 +356,7 @@ h1{
 }
 
 .text-operations{
-  width: 100%;
+  font-size: 15px;
 }
 
 .img-operations img{
@@ -351,30 +384,54 @@ h1{
 .container-squares-global{
   margin-top: 40px;
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .container-squares{
   width: 30%;
-  height: 500px;
   float: left;
+  max-height: 500px;
 }
 
 .square-center{
   width: 40%;
   padding: 50px;
+  float:left;
+  overflow:auto;
 }
 
-.single-square{
+/* soluzione non responsive */
+/* .single-square{
   width: 50%;
+  height: 50%;
   float:left;
-  line-height: 250px;
   text-align: center; 
+  padding: 15% 5% 5% 5%;
+} */
+
+/* soluzione responsive ma non benissimo */
+.single-square{
+  position: relative;
+  width: 13vw;
+  height: 13vw;
+  float:left;
+  border:14px solid transparent;
+}
+
+.single-square:active{
+  border:14px solid rgba(255, 255, 255, 0.4);
+}
+
+.right-square{
+  float:right;
 }
 
 .single-square img{
+  position: absolute;
   width: 70%;
-  vertical-align: middle;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
   filter: invert(1);
 }
 
@@ -449,7 +506,7 @@ h1{
   color: #61082C;
 }
 
-.btn-white{
+.button-white{
   background-color: white;
   font-size: 12px;
   padding: 10px 30px;
@@ -458,8 +515,26 @@ h1{
   float:right;
 }
 
+.button-partner{
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.button-white:hover, .button-partner:hover{
+  background-color:snow;
+}
+
+.container-faq ul #first-question:hover #drop-down-text{
+  display: block;
+}
+
 .container-faq{
   margin: 0 auto;
+}
+
+#drop-down-text{
+  margin-top: 40px;
+  display: none;
 }
 
 .container-faq ul li{
@@ -480,6 +555,7 @@ h1{
 
 footer{
   margin-top: 50px;
+  padding-left: 100px;
   width: 100%;
   background-color: black;
 }
