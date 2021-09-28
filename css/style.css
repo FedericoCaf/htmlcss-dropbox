@@ -35,14 +35,14 @@ header{
 
 .menu-left, .menu-right, header ul li{
   display: inline-block;
-  font-size: 2vh;
+  font-size: 0.9vw;
   line-height: 48px;
   vertical-align: middle;
   border-bottom: 2px solid transparent;
 }
 
 /* sparisce il menu di destra diminuendo dimensione schermo */
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1080px) {
   .menu-right {
     display: none;
   }
@@ -71,7 +71,7 @@ header ul li a{
 .button-blue{
   padding:10px 30px;
   background-color: #0061FF;
-  font-size: 1.5vh;
+  font-size: 0.7vw;
   color: white;
   text-align: center;
 }
@@ -126,16 +126,16 @@ header ul li a{
 }
 
 .text-container-home{
-  width: 40%;
+  width: 35%;
   float: left;
 }
 
 /* posizione l'immagine in modo che vada poco fuori */
 .img-container-home{
-  width: 60%;
+  width: 65%;
   position: absolute;
   right:0;
-  bottom:-10%;
+  /* bottom:-9%; */
 }
 
 h1{
@@ -144,20 +144,20 @@ h1{
 }
 
 .text-container-home h6{
-  font-size: 2vh;
+  font-size: 1vw;
   padding-bottom: 50px;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .text-container-home p{
-  font-size: 1.8vh;
+  font-size: 1vw;
   padding-top: 40px;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .text-container-home .fas.fa-arrow-down{
   padding: 40px 0;
-  font-size: 3vh;
+  font-size: 2vw;
   color: black;
 }
 
